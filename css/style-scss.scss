@@ -10,6 +10,7 @@ header {
     li {
         list-style-type: none;
     }
+
     .top-header {
         background-color: #111111;
         font-family: 'Noto Sans', sans-serif;
@@ -352,6 +353,17 @@ header {
 
 /*  Product Filter styles  */
 
+.notice-bug {
+    padding-top: 20px;
+    text-align: center;
+
+    a {
+        font-size: 14px;
+        color: #111111;
+
+    }
+}
+
 .filter-holder {
     position: relative;
     float: left;
@@ -366,6 +378,8 @@ header {
 
     .filter-heading {
         flex: 1;
+
+
 
         .search-model {
             height: 48px;
@@ -467,6 +481,10 @@ header {
         font-weight: bold;
     }
 
+    .product-filter .ctd {
+        display: none;
+    }
+
     .product-filter__item {
         border-bottom: 1px solid #b3b3b3;
         padding-bottom: 25px;
@@ -553,7 +571,7 @@ header {
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
 
-                    
+
 
                 }
 
@@ -642,69 +660,69 @@ header {
             -webkit-box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
             -moz-box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
             box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
-            
+
 
             .catalog-product .product-rating {
                 padding: 0;
             }
-        
+
             .catalog-product__rating {
                 font-size: 10px;
             }
-        
+
             .catalog-product__rating:after {
                 content: '';
                 display: table;
                 clear: both;
             }
-        
+
             .catalog-product__rating>* {
                 display: inline-block;
                 vertical-align: top;
             }
-        
+
             .catalog-product__rating .rating-stars {}
-        
+
             .catalog-product__rating strong {
                 font-weight: bold;
                 color: #000;
                 margin: 0 3px;
             }
-        
+
             .catalog-product__rating .count-votes {
                 color: #666;
             }
-        
+
             .catalog-product-line__rating {
                 display: inline-block;
                 vertical-align: middle;
                 margin-right: 35px;
             }
-        
+
             .catalog-product-line__rating {
                 display: inline-block;
                 vertical-align: middle;
                 margin-right: 35px;
             }
-        
-        
+
+
             .product-rating {
                 padding-top: 8px;
             }
-        
+
             .product-rating__stars {
                 display: inline-block;
                 vertical-align: middle;
             }
-        
+
             .product-rating__stars li {
                 display: inline-block;
             }
-        
+
             .product-rating__stars li>img {
                 display: block;
             }
-        
+
             .product-rating__value {
                 display: inline-block;
                 vertical-align: middle;
@@ -714,7 +732,7 @@ header {
                 padding: 2px 6px;
                 border: 1px solid #d0d0d0;
             }
-        
+
             .product-rating__value--sm {
                 border: none;
                 padding: 0;
@@ -722,52 +740,52 @@ header {
                 color: #000;
                 margin-left: 10px;
             }
-        
+
             .product-rating__counter {
                 display: inline-block;
                 vertical-align: middle;
                 font-size: 14px;
             }
-        
+
             .product-rating .bx-rating i {
                 width: 20px;
                 height: 20px;
             }
-        
+
             .product-rating .bx-rating i.fa-star-o {
                 background-image: url(images/icon_rating_star-o.svg);
             }
-        
+
             .product-rating .bx-rating i.fa-star,
             .product-rating .bx-rating i.checked {
                 background-image: url(images/icon_rating_star.svg);
             }
-        
-        
+
+
             .card-product-header .product-rating {
                 position: absolute;
                 right: 30px;
                 top: -40px;
             }
-        
+
             .review-form .product-rating {
                 padding-top: 5px;
             }
-        
+
             .review-form .product-rating__stars li {
                 margin-right: 5px;
             }
-        
+
             .review-item__rating {
                 display: inline-block;
                 vertical-align: middle;
                 margin-left: 10px;
             }
-        
+
             .review-item__rating .product-rating {
                 padding-top: 0;
             }
-        
+
             .review-item .bx-rating i.fa {
                 cursor: default;
             }
@@ -848,7 +866,7 @@ header {
     }
 
 
-   
+
 }
 
 .content-box {
@@ -907,14 +925,14 @@ header {
 }
 
 .catalog-description {
-    padding: 30px ;
+    padding: 30px;
     margin: 20px 10px;
     background-color: #F5F5F5;
     border-radius: 20px;
     box-sizing: border-box;
 }
 
-
+/* footer */
 .main-footer {
     display: block;
     width: 100%;
@@ -922,9 +940,11 @@ header {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     background-color: #F5F5F5;
-    li{
+
+    li {
         list-style-type: none;
     }
+
     .main-footer__inner {
         max-width: 1576px;
         margin: auto;
@@ -933,7 +953,7 @@ header {
         padding-left: 170px;
         box-sizing: border-box;
         display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .footer-column {
@@ -947,7 +967,8 @@ header {
         }
 
         a {
-        color: #111111;}
+            color: #111111;
+        }
 
         .footer-column__heading {
             font-size: 16px;
@@ -956,10 +977,33 @@ header {
         }
     }
 
+    @media only screen and (max-width: 990px) {
+        .footer-column {
+            width: 50%;
+        }
+
+        .main-footer__inner {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .footer-column {
+            width: 100%;
+        }
+
+        .main-footer__inner {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
     .social-tabs__link-item {
         display: inline-block;
-        
+
     }
+
     .social-item-facebook {
         background-image: url(../images/social-item-facebook.svg);
         width: 48px;
@@ -988,7 +1032,7 @@ header {
         width: 100%;
     }
 
- 
+
 }
 
 
