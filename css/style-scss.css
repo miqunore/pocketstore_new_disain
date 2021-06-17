@@ -510,8 +510,8 @@ header .m-top-panel .logo {
 }
 .catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__hover-area {
   position: absolute;
-  top: 50px;
-  font-size: 0;
+  top: 500px;
+  font-size: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 100%;
@@ -521,6 +521,9 @@ header .m-top-panel .logo {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 0 35px 40px;
+}
+.catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__hover-area li {
+  list-style-type: none;
 }
 .catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__footer {
   padding: 34px 35px;
