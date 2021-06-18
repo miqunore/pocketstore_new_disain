@@ -554,7 +554,7 @@ header {
             float: left;
             width: 396px;
 
-            height: 668px;
+            height: 640px;
             margin-top: 24px;
 
             .catalog-product {
@@ -570,22 +570,49 @@ header {
                     background-color: white;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
-
-
-
                 }
+
+                .catalog-product__desc {
+                    position: relative;
+                }
+
+                .catalog-product__image a {
+                    display: block;
+                    position: relative;
+                    height: 493px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .catalog-product__image-area {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+
+                .catalog-product__status {
+                    position: absolute;
+                }
+
+
 
                 .catalog-product__hover-area {
                     position: absolute;
                     top: 500px;
-                    font-size: 1;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
                     width: 100%;
                     box-sizing: border-box;
                     z-index: 10;
                     transition: .5s;
-                    padding: 0 35px 40px;
+                    padding: 0 35px 30px;
+                    font-size: 1px;
+                   
 
                     li {
                         list-style-type: none;
@@ -595,7 +622,7 @@ header {
 
 
                 .catalog-product__footer {
-                    padding: 34px 35px;
+                    padding: 20px 35px 25px;
                     font-size: 14px;
                     position: absolute;
                     background-color: #F5F5F5;
@@ -800,7 +827,7 @@ header {
             .catalog-product__hover-area {
                 background-color: #F5F5F5;
                 font-size: 15px;
-                top: 668px;
+                top: 640px;
                 z-index: 100;
                 -webkit-box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
                 -moz-box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
@@ -808,7 +835,7 @@ header {
 
                 .catalog-product__rating {
                     border-top: solid 1px #bcbcbc;
-                    padding: 15px 0 20px;
+                    padding: 10px 0 10px;
                 }
 
                 .detail-title {
@@ -827,7 +854,7 @@ header {
                 }
 
                 .catalog-product__details {
-                    padding-bottom: 35px;
+                    padding-bottom: 30px;
 
 
                 }

@@ -505,7 +505,7 @@ header .m-top-panel .logo {
   display: block;
   float: left;
   width: 396px;
-  height: 668px;
+  height: 640px;
   margin-top: 24px;
 }
 .catalog-holder .catalog .catalog-products__item .catalog-product {
@@ -523,10 +523,32 @@ header .m-top-panel .logo {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__desc {
+  position: relative;
+}
+.catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__image a {
+  display: block;
+  position: relative;
+  height: 493px;
+  width: 100%;
+  text-align: center;
+}
+.catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__image-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__status {
+  position: absolute;
+}
 .catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__hover-area {
   position: absolute;
   top: 500px;
-  font-size: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 100%;
@@ -535,13 +557,14 @@ header .m-top-panel .logo {
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 0 35px 40px;
+  padding: 0 35px 30px;
+  font-size: 1px;
 }
 .catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__hover-area li {
   list-style-type: none;
 }
 .catalog-holder .catalog .catalog-products__item .catalog-product .catalog-product__footer {
-  padding: 34px 35px;
+  padding: 20px 35px 25px;
   font-size: 14px;
   position: absolute;
   background-color: #F5F5F5;
@@ -700,14 +723,14 @@ header .m-top-panel .logo {
 .catalog-holder .catalog .catalog-product:hover .catalog-product__hover-area {
   background-color: #F5F5F5;
   font-size: 15px;
-  top: 668px;
+  top: 640px;
   z-index: 100;
   -webkit-box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
   box-shadow: 3px 3px 14px 5px rgba(34, 60, 80, 0.2);
 }
 .catalog-holder .catalog .catalog-product:hover .catalog-product__hover-area .catalog-product__rating {
   border-top: solid 1px #bcbcbc;
-  padding: 15px 0 20px;
+  padding: 10px 0 10px;
 }
 .catalog-holder .catalog .catalog-product:hover .catalog-product__hover-area .detail-title {
   font-size: 14px;
@@ -722,7 +745,7 @@ header .m-top-panel .logo {
   padding-left: 15px;
 }
 .catalog-holder .catalog .catalog-product:hover .catalog-product__hover-area .catalog-product__details {
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
 .catalog-holder .catalog .catalog-product:hover .catalog-product__hover-area .catalog-product__more {
   padding-left: 70px;
